@@ -22,7 +22,7 @@ app.get('/count', (req, res) => {
         count = req.cookies[COOKIE_NAME];
         //count ++;
         //count ++;
-        count = parseInt(count) + 2;
+        count = parseInt(count) + 3;
     }
     res.cookie(COOKIE_NAME, count);
     res.json({count: count});
